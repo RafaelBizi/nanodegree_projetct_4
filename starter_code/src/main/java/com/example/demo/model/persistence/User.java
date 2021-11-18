@@ -36,12 +36,8 @@ public class User {
 	@JsonIgnore
     private Cart cart;
 
-	@Column(nullable = false, length = 16)
+	@Column(nullable = false, length = 160)
 	@JsonProperty
 	private String password;
-
-	@Column(nullable = false, length = 16)
-	@JsonProperty
-	private String confirmPassword;
 
 }
