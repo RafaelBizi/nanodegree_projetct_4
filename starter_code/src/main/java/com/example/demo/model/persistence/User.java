@@ -13,6 +13,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
@@ -20,6 +21,7 @@ import lombok.Setter;
 @Table(name = "user")
 @Getter
 @Setter
+@NoArgsConstructor
 public class User {
 
 	@Id
@@ -40,4 +42,9 @@ public class User {
 	@JsonProperty
 	private String password;
 
+	public User(long id, String username, String password) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+	}
 }

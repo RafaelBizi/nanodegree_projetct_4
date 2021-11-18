@@ -7,9 +7,7 @@
     <list default="true" id="6269b339-3d0f-465b-9c9e-b57464596b99" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
@@ -125,43 +123,24 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_7_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter_code/auth-course.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/SareetaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/SareetaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nanodegree - Project 4.postman_collection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter_code/src/test/java/com/example/demo/CartTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter_code/src/test/java/com/example/demo/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter_code/src/test/java/com/example/demo/TestsInjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/auth-course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/auth-course.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/controllers/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/repositories/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/repositories/CartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/repositories/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/repositories/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/repositories/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/persistence/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/requests/CreateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/requests/CreateUserRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/requests/ModifyCartRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/model/requests/ModifyCartRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/security/RequestBodyReaderAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/security/RequestBodyReaderAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/security/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/SareetaApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/controllers/AuthenticationTestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/controllers/CartController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/controllers/ItemController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/controllers/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/controllers/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/persistence/Cart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/persistence/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/persistence/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/persistence/UserOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/persistence/repositories/CartRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/persistence/repositories/ItemRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/persistence/repositories/OrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/persistence/repositories/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/requests/CreateUserRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/model/requests/ModifyCartRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/security/RequestBodyReaderAuthenticationFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/security/WebSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/com/example/demo/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/classes/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter_code/target/test-classes/com/example/demo/SareetaApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,18 +182,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/starter_code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/starter_code/src/test" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/starter_code/src/test" />
+      <recent name="$PROJECT_DIR$/starter_code" />
       <recent name="$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/security" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.demo.security" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in auth-course">
     <configuration name="SareetaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.SareetaApplication" />
       <module name="auth-course" />
@@ -228,8 +209,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in auth-course" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth-course" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTests.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.CartTests" />
+      <option name="METHOD_NAME" value="Test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTests.addNewCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.CartTests" />
+      <option name="METHOD_NAME" value="addNewCartTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTests.newCarBadRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.CartTests" />
+      <option name="METHOD_NAME" value="newCarBadRequestTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in auth-course" />
+        <item itemvalue="JUnit.CartTests.newCarBadRequestTest" />
+        <item itemvalue="JUnit.CartTests.addNewCartTest" />
+        <item itemvalue="JUnit.CartTests.Test1" />
         <item itemvalue="Application.SareetaApplication" />
       </list>
     </recent_temporary>
@@ -265,7 +306,25 @@
           <line>51</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/starter_code/src/main/java/com/example/demo/controllers/CartController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/starter_code/src/test/java/com/example/demo/CartTests.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/starter_code/src/test/java/com/example/demo/CartTests.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/project_4_udacity$All_in_auth_course.ic" NAME="All in auth-course Coverage Results" MODIFIED="1637268476060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

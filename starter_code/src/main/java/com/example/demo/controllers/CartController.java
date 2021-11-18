@@ -43,7 +43,7 @@ public class CartController {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 		Cart cart = user.getCart();
-		IntStream.range(0, request.getQuantity())
+		IntStream.range(0, request.getQuantity() - 1)
 			.forEach(i -> cart.addItem(item.get()));
 		cartRepository.save(cart);
 		return ResponseEntity.ok(cart);
