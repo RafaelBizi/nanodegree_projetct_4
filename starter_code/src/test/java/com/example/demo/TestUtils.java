@@ -15,6 +15,7 @@ public class TestUtils {
     public static final String USERNAME_TEST = "rafael";
     public static final String PASSWORD_TEST = "rafael12345";
     public static final String CONFIRM_PASSWORD_TEST = "rafael12345";
+    public static final String PASSWORD_TOO_SHORT_TEST = "rafa12";
     public static final String ITEM_NAME_TEST = "ItemTesting";
     public static final BigDecimal ITEM_PRICE_TEST = new BigDecimal("50.7");
     public static final String ITEM_DESCRIPTION_TEST = "ItemDescription";
@@ -25,7 +26,11 @@ public class TestUtils {
     }
 
     public static Item newItem(long id){
-        Item item = new Item(id, ITEM_NAME_TEST, ITEM_PRICE_TEST, ITEM_DESCRIPTION_TEST);
+        Item item = new Item();
+        item.setId(id);
+        item.setName(ITEM_NAME_TEST);
+        item.setPrice(ITEM_PRICE_TEST);
+        item.setDescription(ITEM_DESCRIPTION_TEST);
         return item;
     }
 

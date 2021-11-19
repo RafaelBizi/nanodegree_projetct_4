@@ -54,7 +54,7 @@ public class UserController {
 
 		if (!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
 			LOGGER.error("Password is different than the confirmed password");
-			return ResponseEntity.badRequest().header("Password is different than the confirmed password!").build();
+			return ResponseEntity.badRequest().header("header1","Password is different than the confirmed password!").build();
 		}
 
 		if (createUserRequest.getConfirmPassword().equals("") ||
@@ -62,7 +62,7 @@ public class UserController {
 			createUserRequest.getConfirmPassword().length() == 0 ||
 			createUserRequest.getConfirmPassword().length() < 8) {
 			LOGGER.error("Password can't be less than 8 chars or null!");
-			return ResponseEntity.badRequest().header("Bad requested password!","Avoid empty or less than 8 chars password!").build();
+			return ResponseEntity.badRequest().header("header2","Avoid empty or less than 8 chars password!").build();
 		}
 
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
