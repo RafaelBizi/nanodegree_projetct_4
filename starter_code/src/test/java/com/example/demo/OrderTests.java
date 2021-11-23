@@ -60,7 +60,7 @@ public class OrderTests {
 
     @Test
     public void submitOrderSuccessTest() {
-        ResponseEntity<UserOrder> orderResponseEntity = orderController.submit(TestUtils.USERNAME_TEST);
+        ResponseEntity<UserOrder> orderResponseEntity = orderController.orderSubmit(TestUtils.USERNAME_TEST);
         Assert.assertEquals(200, orderResponseEntity.getStatusCodeValue());
         assertEquals(1, orderResponseEntity.getBody().getItems().size());
         assertEquals(TestUtils.USERNAME_TEST, orderResponseEntity.getBody().getUser().getUsername());
@@ -68,7 +68,7 @@ public class OrderTests {
 
     @Test
     public void submitOrderNotFoundTest() {
-        ResponseEntity<UserOrder> orderResponseEntity = orderController.submit("unknown");
+        ResponseEntity<UserOrder> orderResponseEntity = orderController.orderSubmit("unknown");
         Assert.assertEquals(404, orderResponseEntity.getStatusCodeValue());
     }
 

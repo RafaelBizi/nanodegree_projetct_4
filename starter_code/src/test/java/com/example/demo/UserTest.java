@@ -12,7 +12,6 @@ import org.mockito.Mockito;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import javax.swing.text.Utilities;
 import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
@@ -74,14 +73,14 @@ public class UserTest {
 
     @Test
     public void findUserByIdSuccessTest(){
-        ResponseEntity<User> userResponseEntity = userController.findById(1L);
+        ResponseEntity<User> userResponseEntity = userController.findUserById(1L);
         assertEquals(200, userResponseEntity.getStatusCodeValue());
         assertEquals(TestUtils.USERNAME_TEST, userResponseEntity.getBody().getUsername());
     }
 
     @Test
     public void findUserByIdNotFoundTest(){
-        ResponseEntity<User> userResponseEntity = userController.findById(10L);
+        ResponseEntity<User> userResponseEntity = userController.findUserById(10L);
         assertEquals(404, userResponseEntity.getStatusCodeValue());
     }
 

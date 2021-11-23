@@ -37,14 +37,28 @@ public class UserController {
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 
 	@GetMapping("/id/{id}")
-	public ResponseEntity<User> findById(@PathVariable Long id) {
-		return ResponseEntity.of(userRepository.findById(id));
+	public ResponseEntity<User> findUserById(@PathVariable Long id) {
+		ResponseEntity<User> userResponseEntity = ResponseEntity.of(userRepository.findById(id));
+		HttpStatus status = HttpStatus.valueOf(userResponseEntity.getStatusCodeValue());
+		if (status.is2xxSuccessful()){
+			LOGGER.info("m=findUserById, User ID {} found properly!", id);
+		} else if (status.is4xxClientError()){
+			LOGGER.error("m=findUserById, User ID {} not found!", id);
+		}
+		return userResponseEntity;
 	}
 	
 	@GetMapping("/{username}")
 	public ResponseEntity<User> findByUserName(@PathVariable String username) {
 		User user = userRepository.findByUsername(username);
-		return user == null ? ResponseEntity.notFound().build() : ResponseEntity.ok(user);
+		ResponseEntity<?> responseEntity = user == null ? ResponseEntity.notFound().build() : ResponseEntity.ok(user);
+		HttpStatus status = HttpStatus.valueOf(responseEntity.getStatusCodeValue());
+		if (status.is2xxSuccessful()){
+			LOGGER.info("m=findByUserName, User {} found properly!", username);
+		} else if (status.is4xxClientError()){
+			LOGGER.error("m=findByUserName, User {} not found!", username);
+		}
+		return (ResponseEntity<User>) responseEntity;
 	}
 	
 	@PostMapping("/create")
@@ -53,7 +67,7 @@ public class UserController {
 		user.setUsername(createUserRequest.getUsername());
 
 		if (!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
-			LOGGER.error("Password is different than the confirmed password");
+			LOGGER.error("createUser, Password is different than the confirmed password");
 			return ResponseEntity.badRequest().header("header1","Password is different than the confirmed password!").build();
 		}
 
@@ -61,7 +75,7 @@ public class UserController {
 		    createUserRequest.getConfirmPassword() == null ||
 			createUserRequest.getConfirmPassword().length() == 0 ||
 			createUserRequest.getConfirmPassword().length() < 8) {
-			LOGGER.error("Password can't be less than 8 chars or null!");
+			LOGGER.error("createUser, Password can't be less than 8 chars or null!");
 			return ResponseEntity.badRequest().header("header2","Avoid empty or less than 8 chars password!").build();
 		}
 
@@ -71,6 +85,7 @@ public class UserController {
 		cartRepository.save(cart);
 		user.setCart(cart);
 		userRepository.save(user);
+		LOGGER.info("m=createUser, User {} created properly!", user.getUsername());
 		return ResponseEntity.ok(user);
 	}
 	
