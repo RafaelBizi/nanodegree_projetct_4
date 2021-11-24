@@ -1,0 +1,117 @@
+
+SucessoSaída do console
+Iniciado pelo usuário Administrador
+Running as SYSTEM
+Construindo no workspace /home/rafael/.jenkins/workspace/DeploBackEnd
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/RafaelBizi/project_4_udacity.git # timeout=10
+Fetching upstream changes from https://github.com/RafaelBizi/project_4_udacity.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.33.1'
+ > git fetch --tags --force --progress -- https://github.com/RafaelBizi/project_4_udacity.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision b6587b2a985ca056a83f68c88c7bc6565d99ba77 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b6587b2a985ca056a83f68c88c7bc6565d99ba77 # timeout=10
+Commit message: "modify project struture to have maven project in root directory"
+ > git rev-list --no-walk b6587b2a985ca056a83f68c88c7bc6565d99ba77 # timeout=10
+[DeploBackEnd] $ /opt/apache-maven-3.6.3/bin/mvn clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.example:auth-course >-----------------------
+[INFO] Building auth-course 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ auth-course ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ auth-course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ auth-course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to /home/rafael/.jenkins/workspace/DeploBackEnd/target/classes
+[INFO] /home/rafael/.jenkins/workspace/DeploBackEnd/src/main/java/com/example/demo/controllers/UserController.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/rafael/.jenkins/workspace/DeploBackEnd/src/main/java/com/example/demo/controllers/UserController.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ auth-course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/rafael/.jenkins/workspace/DeploBackEnd/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ auth-course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /home/rafael/.jenkins/workspace/DeploBackEnd/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ auth-course ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.demo.OrderTests
+{ "timestamp": 23-11-2021 21:48:38.183, "message": m=orderSubmit, Username unknown not found!, "logger_name": c.e.d.controllers.OrderController, "thread_name": [main], "level": ERROR }
+{ "timestamp": 23-11-2021 21:48:38.197, "message": m=orderSubmit, Order was submitted properly!, "logger_name": c.e.d.controllers.OrderController, "thread_name": [main], "level": INFO  }
+{ "timestamp": 23-11-2021 21:48:38.198, "message": m=getOrdersForUser, Orders found properly!, "logger_name": c.e.d.controllers.OrderController, "thread_name": [main], "level": INFO  }
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.57 s - in com.example.demo.OrderTests
+[INFO] Running com.example.demo.LoginTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.example.demo.LoginTests
+[INFO] Running com.example.demo.CartTests
+{ "timestamp": 23-11-2021 21:48:38.271, "message": m=removeFromcart, Item removed from cart properly!, "logger_name": c.e.demo.controllers.CartController, "thread_name": [main], "level": INFO  }
+{ "timestamp": 23-11-2021 21:48:38.272, "message": m=addTocart, Username not found!, "logger_name": c.e.demo.controllers.CartController, "thread_name": [main], "level": ERROR }
+{ "timestamp": 23-11-2021 21:48:38.272, "message": m=addTocart, Item ID not found!, "logger_name": c.e.demo.controllers.CartController, "thread_name": [main], "level": ERROR }
+{ "timestamp": 23-11-2021 21:48:38.274, "message": m=addTocart, The item was added into cart properly!, "logger_name": c.e.demo.controllers.CartController, "thread_name": [main], "level": INFO  }
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in com.example.demo.CartTests
+[INFO] Running com.example.demo.UserTest
+{ "timestamp": 23-11-2021 21:48:38.299, "message": m=findUserById, User ID 1 found properly!, "logger_name": c.e.demo.controllers.UserController, "thread_name": [main], "level": INFO  }
+{ "timestamp": 23-11-2021 21:48:38.300, "message": m=findUserById, User ID 10 not found!, "logger_name": c.e.demo.controllers.UserController, "thread_name": [main], "level": ERROR }
+{ "timestamp": 23-11-2021 21:48:38.302, "message": m=createUser, User rafael created properly!, "logger_name": c.e.demo.controllers.UserController, "thread_name": [main], "level": INFO  }
+{ "timestamp": 23-11-2021 21:48:38.303, "message": createUser, Password is different than the confirmed password, "logger_name": c.e.demo.controllers.UserController, "thread_name": [main], "level": ERROR }
+{ "timestamp": 23-11-2021 21:48:38.305, "message": createUser, Password can't be less than 8 chars or null!, "logger_name": c.e.demo.controllers.UserController, "thread_name": [main], "level": ERROR }
+{ "timestamp": 23-11-2021 21:48:38.306, "message": m=findByUserName, User rafael found properly!, "logger_name": c.e.demo.controllers.UserController, "thread_name": [main], "level": INFO  }
+{ "timestamp": 23-11-2021 21:48:38.307, "message": m=findByUserName, User unknown not found!, "logger_name": c.e.demo.controllers.UserController, "thread_name": [main], "level": ERROR }
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in com.example.demo.UserTest
+[INFO] Running com.example.demo.SareetaApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+{ "timestamp": 23-11-2021 21:48:38.656, "message": Starting SareetaApplicationTests on rafael-Inspiron-3583 with PID 25659 (started by rafael in /home/rafael/.jenkins/workspace/DeploBackEnd), "logger_name": c.e.demo.SareetaApplicationTests, "thread_name": [main], "level": INFO  }
+{ "timestamp": 23-11-2021 21:48:38.657, "message": No active profile set, falling back to default profiles: default, "logger_name": c.e.demo.SareetaApplicationTests, "thread_name": [main], "level": INFO  }
+{ "timestamp": 23-11-2021 21:48:41.550, "message": Started SareetaApplicationTests in 3.059 seconds (JVM running for 4.234), "logger_name": c.e.demo.SareetaApplicationTests, "thread_name": [main], "level": INFO  }
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.254 s - in com.example.demo.SareetaApplicationTests
+[INFO] Running com.example.demo.ItemTests
+{ "timestamp": 23-11-2021 21:48:41.568, "message": m=getItemsByName, Item name ItemTesting found properly!, "logger_name": c.e.demo.controllers.ItemController, "thread_name": [main], "level": INFO  }
+{ "timestamp": 23-11-2021 21:48:41.569, "message": m=getItemById, Item ID 10 not found!, "logger_name": c.e.demo.controllers.ItemController, "thread_name": [main], "level": ERROR }
+{ "timestamp": 23-11-2021 21:48:41.570, "message": m=getItemById, Item ID 1 found properly!, "logger_name": c.e.demo.controllers.ItemController, "thread_name": [main], "level": INFO  }
+{ "timestamp": 23-11-2021 21:48:41.571, "message": m=getItemsByName, Item name unknown not found!, "logger_name": c.e.demo.controllers.ItemController, "thread_name": [main], "level": ERROR }
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.example.demo.ItemTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ auth-course ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [auth-course] in [/home/rafael/.jenkins/workspace/DeploBackEnd/target/auth-course-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Webapp assembled in [99 msecs]
+[INFO] Building war: /home/rafael/.jenkins/workspace/DeploBackEnd/target/auth-course-0.0.1-SNAPSHOT.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.5.RELEASE:repackage (repackage) @ auth-course ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.569 s
+[INFO] Finished at: 2021-11-23T21:48:43-03:00
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
